@@ -46,4 +46,5 @@ jobs:
         file: ${{ matrix.component }}/docker/Dockerfile
         platforms: linux/amd64
         tags: |
-            ghcr.io/ONickolai/podtato-${{ matrix.component }}:${{ github.sha }}
+           ghcr.io/${{ github.repository_owner }}/podtato-${{ matrix.component }}:${{ github.sha }}
+
